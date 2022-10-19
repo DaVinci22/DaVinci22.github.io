@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contact.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>CONTACT</title>
+    </head>
+    <body>
+        <!--NAVBAR-->
+            <div class="menu">
+                <div class="wrapper">
+                    <div class="logo">
+                        <a href="./newhome.html"><div class="first">DaVinci</div></a>
+                        <a href="./newhome.html"><div class="second">Website</div></a>
+                    </div>
+    
+                    <ul class="navbar">
+                        <li><a href="./dashboard.html">DASHBOARD</a></li>
+                        <li><a href="./home.html">HOME</a></li>
+                        <li><a href="./contact.html">CONTACT</a></li>
+                        <li><a href="./biografi.html">BIOGRAFI</a></li>
+                    </ul>
+                </div>
+                
+                <!--CONTENT-->
+            <div class="content">
+                <div class="judul">
+                    <h2>--CONTACT--</h2>
+                </div>
+                <div class="form">
+                    <div id="error_message"></div>
+                    <form id="myform" name="form">
+                      <div class="input_field">
+                        <input type="text" placeholder="Masukkan nama..." id="name" name="nama" autocomplete="off" required>
+                      </div>
+                      <div class="input_field">
+                        <input type="text" placeholder="Masukkan email..." id="email" name="email" autocomplete="off" required>
+                      </div>
+                      <div class="input_field">
+                        <textarea placeholder="Masukkan pesan..." id="message" name="pesan" required></textarea>
+                      </div>
+                      <div class="buton">
+                        <input type="submit" onclick="validasi()" value="Kirim Pesan">
+                      </div>
+                    <script>
+                        function validasi(){
+                            nama = form.nama.value;
+                            email = form.email.value;
+                            message = form.message.value;
+                            if(nama == "" || email == "" || message == ""){
+                            alert("Isi kolom tidak boleh kosong");
+                            } else {
+                            alert("Pesan telah terkirim");
+                            location.replace("Contact.html");
+                            }
+                        }
+                    </script>
+                    </form>
+                  </div>
+                <div class="contact">
+                    <div class="card text-center">
+                        <h1>INSTAGRAM</h1>
+                        <i class="fa-brands fa-instagram icons"></i>
+                        <a href="https://www.instagram.com/kira_kusuma22?r=nametag"><p>@kira_kusuma22</p></a>
+                    </div>
+                    <div class="card text-center">
+                        <h1>WHATSAPP</h1> 
+                        <i class="fa-brands fa-whatsapp icons"></i>
+                        <a href="https://wa.me/6282346452491"><p>+62 823-4645-2491</p></a>
+                    </div>
+                    <div class="card text-center">
+                        <h1>TWITTER</h1>
+                        <i class="fa-brands fa-twitter icons"></i>
+                        <a href="https://twitter.com/kira_kusuma"><p>@kira_kusuma</p></a>
+                    </div>
+                    <div class="card text-center">
+                        <h1>FACEBOOK</h1>
+                        <i class="fa-brands fa-facebook icons"></i>
+                        <a href="https://www.facebook.com/mukhliskusuma.mukhlis"><p>Mukhlis Kusuma Mukhlis  </p></a>
+                    </div>
+                </div>
+            </div>
+                
+    </body>
+</html>
